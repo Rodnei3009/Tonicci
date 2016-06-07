@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Introducao
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g))
+                {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/q/q.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/EventEmitter.js/EventEmitter.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/tv4/tv4.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/localforage/dist/localforage.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/localforage/plugins/localforage-setitems/localforage-setitems.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/localforage/plugins/localforage-find/localforage-find.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/crypto-js-md5/crypto-js-md5.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/moment/moment.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/underscore-query/underscore-query.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/offline/offline.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../libs/cordova.js">
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+        <link href="Introducao.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="Introducao.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Introducao" id="Introducao"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="f" name="mobileheader" id="Introducao_mobileheader" class="Introducao_mobileheader">
+                <h1 dsid="mobileheader">
+                    APP - VivoFácil
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Introducao_mobilecontainer" name="mobilecontainer"
+            class="Introducao_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="f">
+                <!-- mobilelabel_3 -->
+                <div name="mobilelabel_3" id="Introducao_mobilelabel_3" dsid="mobilelabel_3" data-role="appery_label"
+                class="Introducao_mobilelabel_3">
+                    Introdução:
+                </div>
+                <!-- mobilelabel_4 -->
+                <div name="mobilelabel_4" id="Introducao_mobilelabel_4" dsid="mobilelabel_4" data-role="appery_label"
+                class="Introducao_mobilelabel_4">
+                    Atualmente o processo de encerramento de ordem de serviço de instalação de TV, Internet
+                    e Telefone é muito demorado. Isso porque, após o técnico instalar todos os equipamentos,
+                    ele precisa ligar para a central, passar informações dos equipamentos instalados,
+                    e o cliente precisa dar o OK para a atendente.
+                </div>
+                <!-- mobilelabel_6 -->
+                <div name="mobilelabel_6" id="Introducao_mobilelabel_6" dsid="mobilelabel_6" data-role="appery_label"
+                class="Introducao_mobilelabel_6">
+                    Normalmente, o tempo da ligação para a central demora de 30 minutos à 1 hora. Com
+                    isso, consumindo muito tempo do técnico, e o impedindo de ir para o próximo atendimento
+                    mais rapidamente.
+                </div>
+                <!-- mobilelabel_10 -->
+                <div name="mobilelabel_10" id="Introducao_mobilelabel_10" dsid="mobilelabel_10"
+                data-role="appery_label" class="Introducao_mobilelabel_10">
+                    Visto que nos dias de hoje, estamos buscando cada vez mais tornar as coisas dinâmicas
+                    e práticas, separamos alguns pontos importantes.
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Introducao_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Introducao_mobilefooter" data-theme="f">
+                <!-- mobilebutton_9 --><!--
+                --><a data-role="button" name="mobilebutton_9" dsid="mobilebutton_9" class="Introducao_mobilebutton_9"
+                style='margin-left:5px; ' id="Introducao_mobilebutton_9" data-corners="true" data-icon="none"
+                data-iconpos='nowhere' x-apple-data-detectors="false" data-inline='true' data-mini='true'
+                data-theme="f" tabindex="3">
+                Continuar...
+                </a>
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="IntroducaoPros" id="IntroducaoPros"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Voltar"
+            data-theme="f" name="mobileheader" id="IntroducaoPros_mobileheader" class="IntroducaoPros_mobileheader">
+                <h1 dsid="mobileheader">
+                    APP - VivoFácil
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="IntroducaoPros_mobilecontainer" name="mobilecontainer"
+            class="IntroducaoPros_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="f">
+                <!-- mobilelabel_7 -->
+                <div name="mobilelabel_7" id="IntroducaoPros_mobilelabel_7" dsid="mobilelabel_7"
+                data-role="appery_label" class="IntroducaoPros_mobilelabel_7">
+                    Processo Futuro - Prós
+                </div>
+                <!-- mobilelabel_2 -->
+                <div name="mobilelabel_2" id="IntroducaoPros_mobilelabel_2" dsid="mobilelabel_2"
+                data-role="appery_label" class="IntroducaoPros_mobilelabel_2">
+                    Pensando nisso, tivemos uma ídeia para facilitar o encerramento dos atendimentos,
+                    de forma prática, rápida, fácil e segura.
+                </div>
+                <!-- mobilelabel_3 -->
+                <div name="mobilelabel_3" id="IntroducaoPros_mobilelabel_3" dsid="mobilelabel_3"
+                data-role="appery_label" class="IntroducaoPros_mobilelabel_3">
+                    1-) Geração e envio de senha ao cliente no momento do agendamento da instalação
+                </div>
+                <!-- mobilelabel_5 -->
+                <div name="mobilelabel_5" id="IntroducaoPros_mobilelabel_5" dsid="mobilelabel_5"
+                data-role="appery_label" class="IntroducaoPros_mobilelabel_5">
+                    2-) Praticidade e agilidade no encerramento do atendimento sem precisar ligar para
+                    a central
+                </div>
+                <!-- mobilelabel_8 -->
+                <div name="mobilelabel_8" id="IntroducaoPros_mobilelabel_8" dsid="mobilelabel_8"
+                data-role="appery_label" class="IntroducaoPros_mobilelabel_8">
+                    3-) Aceite do cliente mediante a utilização de senha recebida pelo agendamento.
+                </div>
+                <!-- mobilelabel_9 -->
+                <div name="mobilelabel_9" id="IntroducaoPros_mobilelabel_9" dsid="mobilelabel_9"
+                data-role="appery_label" class="IntroducaoPros_mobilelabel_9">
+                    4-) Status em tempo real dos atendimentos realizados
+                </div>
+                <!-- mobilelabel_10 -->
+                <div name="mobilelabel_10" id="IntroducaoPros_mobilelabel_10" dsid="mobilelabel_10"
+                data-role="appery_label" class="IntroducaoPros_mobilelabel_10">
+                    5-) Relatórios dinâmicos e em Tempo real
+                </div>
+                <!-- mobilelabel_11 -->
+                <div name="mobilelabel_11" id="IntroducaoPros_mobilelabel_11" dsid="mobilelabel_11"
+                data-role="appery_label" class="IntroducaoPros_mobilelabel_11">
+                    6-) Possibilidade antecipar o envio de técnicos aos locais com problema
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="IntroducaoPros_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="IntroducaoPros_mobilefooter" data-theme="f">
+                <!-- mobilebutton_6 --><!--
+                --><a data-role="button" name="mobilebutton_6" dsid="mobilebutton_6" class="IntroducaoPros_mobilebutton_6"
+                style='margin-left:5px; ' id="IntroducaoPros_mobilebutton_6" data-corners="true"
+                data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false" data-inline='true'
+                data-mini='true' data-theme="f" tabindex="1">
+                Continuar...
+                </a>
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="PaginaInicial" id="PaginaInicial"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Voltar"
+            data-theme="f" name="mobileheader" id="PaginaInicial_mobileheader" class="PaginaInicial_mobileheader">
+                <h1 dsid="mobileheader">
+                    Vivo Fácil
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="PaginaInicial_mobilecontainer" name="mobilecontainer"
+            class="PaginaInicial_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="f">
+                <!-- mobileimage_2 -->
+                <img class="PaginaInicial_mobileimage_2" src="../img/logovivo.png" id="PaginaInicial_mobileimage_2"
+                dsid="mobileimage_2" name="mobileimage_2" />
+                <!-- mobilelabel_4 -->
+                <div name="mobilelabel_4" id="PaginaInicial_mobilelabel_4" dsid="mobilelabel_4"
+                data-role="appery_label" class="PaginaInicial_mobilelabel_4">
+                    Serviço de Instalação
+                </div>
+                <!-- mobiletextinput_7 -->
+                <div data-role="fieldcontain" class="PaginaInicial_mobiletextinput_7 ">
+                    <input type="text" name="mobiletextinput_7" dsid="mobiletextinput_7" value="" placeholder="Usuário:"
+                    id="PaginaInicial_mobiletextinput_7" tabindex="3" multiple data-theme="f" class="PaginaInicial_mobiletextinput_7"
+                    />
+                </div>
+                <!-- mobiletextinput_8 -->
+                <div data-role="fieldcontain" class="PaginaInicial_mobiletextinput_8 ">
+                    <input type="password" name="mobiletextinput_8" dsid="mobiletextinput_8" value=""
+                    placeholder="Senha:" id="PaginaInicial_mobiletextinput_8" tabindex="4" multiple data-theme="f"
+                    class="PaginaInicial_mobiletextinput_8" />
+                </div>
+                <!-- mobilebutton_5 --><!--
+                --><a data-role="button" name="mobilebutton_5" dsid="mobilebutton_5" class="PaginaInicial_mobilebutton_5"
+                id="PaginaInicial_mobilebutton_5" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="1">
+                Confirmar
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="PaginaInicial_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="PaginaInicial_mobilefooter" data-theme="f">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="ConfirmacaoCliente" id="ConfirmacaoCliente"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Voltar"
+            data-theme="f" name="mobileheader" id="ConfirmacaoCliente_mobileheader" class="ConfirmacaoCliente_mobileheader">
+                <h1 dsid="mobileheader">
+                    Autorização
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="ConfirmacaoCliente_mobilecontainer" name="mobilecontainer"
+            class="ConfirmacaoCliente_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="f">
+                <!-- mobilelabel_2 -->
+                <div name="mobilelabel_2" id="ConfirmacaoCliente_mobilelabel_2" dsid="mobilelabel_2"
+                data-role="appery_label" class="ConfirmacaoCliente_mobilelabel_2">
+                    Autorização de Encerramento
+                </div>
+                <!-- mobiletextinput_3 -->
+                <div data-role="fieldcontain" class="ConfirmacaoCliente_mobiletextinput_3 ">
+                    <input type="password" name="mobiletextinput_3" dsid="mobiletextinput_3" value=""
+                    placeholder="Senha de autorização do cliente..." id="ConfirmacaoCliente_mobiletextinput_3"
+                    tabindex="1" multiple data-theme="f" class="ConfirmacaoCliente_mobiletextinput_3"
+                    />
+                </div>
+                <!-- mobiletextarea_4 -->
+                <div data-role="fieldcontain" class="ConfirmacaoCliente_mobiletextarea_4 ">
+                    <textarea name="mobiletextarea_4" id="ConfirmacaoCliente_mobiletextarea_4" data-mini="false"
+                    tabindex="2" dsid="mobiletextarea_4" data-theme="f" placeholder="Comentário sobre o atendimento..."
+                    class="ConfirmacaoCliente_mobiletextarea_4">
+</textarea>
+                </div>
+                <!-- mobilebutton_5 --><!--
+                --><a data-role="button" name="mobilebutton_5" dsid="mobilebutton_5" class="ConfirmacaoCliente_mobilebutton_5"
+                id="ConfirmacaoCliente_mobilebutton_5" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="3">
+                Confirmar Atendimento
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="ConfirmacaoCliente_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="ConfirmacaoCliente_mobilefooter" data-theme="f">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="BaixarOrdemInternet_TV" id="BaixarOrdemInternet_TV"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Voltar"
+            data-theme="f" name="mobileheader" id="BaixarOrdemInternet_TV_mobileheader" class="BaixarOrdemInternet_TV_mobileheader">
+                <h1 dsid="mobileheader">
+                    TV + Internet
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="BaixarOrdemInternet_TV_mobilecontainer" name="mobilecontainer"
+            class="BaixarOrdemInternet_TV_mobilecontainer ui-content" dsid="mobilecontainer"
+            data-theme="f">
+                <!-- mobilelabel_2 -->
+                <div name="mobilelabel_2" id="BaixarOrdemInternet_TV_mobilelabel_2" dsid="mobilelabel_2"
+                data-role="appery_label" class="BaixarOrdemInternet_TV_mobilelabel_2">
+                    Número da Ordem
+                </div>
+                <!-- mobiletextinput_3 -->
+                <div data-role="fieldcontain" class="BaixarOrdemInternet_TV_mobiletextinput_3 ">
+                    <input type="number" name="mobiletextinput_3" dsid="mobiletextinput_3" value=""
+                    placeholder="Insira o número..." id="BaixarOrdemInternet_TV_mobiletextinput_3" tabindex="1"
+                    multiple data-theme="f" class="BaixarOrdemInternet_TV_mobiletextinput_3" />
+                </div>
+                <!-- mobilelabel_10 -->
+                <div name="mobilelabel_10" id="BaixarOrdemInternet_TV_mobilelabel_10" dsid="mobilelabel_10"
+                data-role="appery_label" class="BaixarOrdemInternet_TV_mobilelabel_10">
+                    Modem Internet
+                </div>
+                <!-- mobiletextinput_11 -->
+                <div data-role="fieldcontain" class="BaixarOrdemInternet_TV_mobiletextinput_11 ">
+                    <input type="text" name="mobiletextinput_11" dsid="mobiletextinput_11" value=""
+                    placeholder="Insira o código..." id="BaixarOrdemInternet_TV_mobiletextinput_11" tabindex="6"
+                    multiple data-theme="f" class="BaixarOrdemInternet_TV_mobiletextinput_11" />
+                </div>
+                <!-- mobilelabel_12 -->
+                <div name="mobilelabel_12" id="BaixarOrdemInternet_TV_mobilelabel_12" dsid="mobilelabel_12"
+                data-role="appery_label" class="BaixarOrdemInternet_TV_mobilelabel_12">
+                    Decodificador TV
+                </div>
+                <!-- mobiletextinput_13 -->
+                <div data-role="fieldcontain" class="BaixarOrdemInternet_TV_mobiletextinput_13 ">
+                    <input type="text" name="mobiletextinput_13" dsid="mobiletextinput_13" value=""
+                    placeholder="Insira o código..." id="BaixarOrdemInternet_TV_mobiletextinput_13" tabindex="7"
+                    multiple data-theme="f" class="BaixarOrdemInternet_TV_mobiletextinput_13" />
+                </div>
+                <!-- mobiletextarea_6 -->
+                <div data-role="fieldcontain" class="BaixarOrdemInternet_TV_mobiletextarea_6 ">
+                    <textarea name="mobiletextarea_6" id="BaixarOrdemInternet_TV_mobiletextarea_6" tabindex="3"
+                    dsid="mobiletextarea_6" data-theme="f" placeholder="Descrição da instalação..." class="BaixarOrdemInternet_TV_mobiletextarea_6">
+</textarea>
+                </div>
+                <!-- mobilebutton_27 --><!--
+                --><a data-role="button" name="mobilebutton_27" dsid="mobilebutton_27" class="BaixarOrdemInternet_TV_mobilebutton_27"
+                id="BaixarOrdemInternet_TV_mobilebutton_27" data-corners="true" data-icon="none"
+                data-iconpos='nowhere' x-apple-data-detectors="false" data-mini="false" data-theme="f"
+                tabindex="10">
+                Avançar
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="BaixarOrdemInternet_TV_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="BaixarOrdemInternet_TV_mobilefooter"
+            data-theme="f">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="BaixarOrdemTV" id="BaixarOrdemTV"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Voltar"
+            data-theme="f" name="mobileheader" id="BaixarOrdemTV_mobileheader" class="BaixarOrdemTV_mobileheader">
+                <h1 dsid="mobileheader">
+                    Serviço TV
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="BaixarOrdemTV_mobilecontainer" name="mobilecontainer"
+            class="BaixarOrdemTV_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="f">
+                <!-- mobilelabel_2 -->
+                <div name="mobilelabel_2" id="BaixarOrdemTV_mobilelabel_2" dsid="mobilelabel_2"
+                data-role="appery_label" class="BaixarOrdemTV_mobilelabel_2">
+                    Número da Ordem
+                </div>
+                <!-- mobiletextinput_3 -->
+                <div data-role="fieldcontain" class="BaixarOrdemTV_mobiletextinput_3 ">
+                    <input type="number" name="mobiletextinput_3" dsid="mobiletextinput_3" value=""
+                    placeholder="Insira o número..." id="BaixarOrdemTV_mobiletextinput_3" tabindex="1"
+                    multiple data-theme="f" class="BaixarOrdemTV_mobiletextinput_3" />
+                </div>
+                <!-- mobilelabel_12 -->
+                <div name="mobilelabel_12" id="BaixarOrdemTV_mobilelabel_12" dsid="mobilelabel_12"
+                data-role="appery_label" class="BaixarOrdemTV_mobilelabel_12">
+                    Decodificador TV
+                </div>
+                <!-- mobiletextinput_13 -->
+                <div data-role="fieldcontain" class="BaixarOrdemTV_mobiletextinput_13 ">
+                    <input type="text" name="mobiletextinput_13" dsid="mobiletextinput_13" value=""
+                    placeholder="Insira o código..." id="BaixarOrdemTV_mobiletextinput_13" tabindex="7"
+                    multiple data-theme="f" class="BaixarOrdemTV_mobiletextinput_13" />
+                </div>
+                <!-- mobiletextarea_6 -->
+                <div data-role="fieldcontain" class="BaixarOrdemTV_mobiletextarea_6 ">
+                    <textarea name="mobiletextarea_6" id="BaixarOrdemTV_mobiletextarea_6" tabindex="3"
+                    dsid="mobiletextarea_6" data-theme="f" placeholder="Descrição da instalação..." class="BaixarOrdemTV_mobiletextarea_6">
+</textarea>
+                </div>
+                <!-- mobilebutton_27 --><!--
+                --><a data-role="button" name="mobilebutton_27" dsid="mobilebutton_27" class="BaixarOrdemTV_mobilebutton_27"
+                id="BaixarOrdemTV_mobilebutton_27" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="10">
+                Avançar
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="BaixarOrdemTV_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="BaixarOrdemTV_mobilefooter" data-theme="f">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="BaixarOrdemTelefone" id="BaixarOrdemTelefone"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Voltar"
+            data-theme="f" name="mobileheader" id="BaixarOrdemTelefone_mobileheader" class="BaixarOrdemTelefone_mobileheader">
+                <h1 dsid="mobileheader">
+                    Serviço Telefone
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="BaixarOrdemTelefone_mobilecontainer" name="mobilecontainer"
+            class="BaixarOrdemTelefone_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="f">
+                <!-- mobilelabel_2 -->
+                <div name="mobilelabel_2" id="BaixarOrdemTelefone_mobilelabel_2" dsid="mobilelabel_2"
+                data-role="appery_label" class="BaixarOrdemTelefone_mobilelabel_2">
+                    Número da Ordem
+                </div>
+                <!-- mobiletextinput_3 -->
+                <div data-role="fieldcontain" class="BaixarOrdemTelefone_mobiletextinput_3 ">
+                    <input type="number" name="mobiletextinput_3" dsid="mobiletextinput_3" value=""
+                    placeholder="Insira o número..." id="BaixarOrdemTelefone_mobiletextinput_3" tabindex="1"
+                    multiple data-theme="f" class="BaixarOrdemTelefone_mobiletextinput_3" />
+                </div>
+                <!-- mobilelabel_12 -->
+                <div name="mobilelabel_12" id="BaixarOrdemTelefone_mobilelabel_12" dsid="mobilelabel_12"
+                data-role="appery_label" class="BaixarOrdemTelefone_mobilelabel_12">
+                    Código Instalação
+                </div>
+                <!-- mobiletextinput_13 -->
+                <div data-role="fieldcontain" class="BaixarOrdemTelefone_mobiletextinput_13 ">
+                    <input type="text" name="mobiletextinput_13" dsid="mobiletextinput_13" value=""
+                    placeholder="Insira o código..." id="BaixarOrdemTelefone_mobiletextinput_13" tabindex="7"
+                    multiple data-theme="f" class="BaixarOrdemTelefone_mobiletextinput_13" />
+                </div>
+                <!-- mobilelabel_28 -->
+                <div name="mobilelabel_28" id="BaixarOrdemTelefone_mobilelabel_28" dsid="mobilelabel_28"
+                data-role="appery_label" class="BaixarOrdemTelefone_mobilelabel_28">
+                    Número Armário
+                </div>
+                <!-- mobiletextinput_29 -->
+                <div data-role="fieldcontain" class="BaixarOrdemTelefone_mobiletextinput_29 ">
+                    <input type="number" name="mobiletextinput_29" dsid="mobiletextinput_29" value=""
+                    placeholder="Insira o número e posição..." id="BaixarOrdemTelefone_mobiletextinput_29"
+                    tabindex="11" multiple data-theme="f" class="BaixarOrdemTelefone_mobiletextinput_29"
+                    />
+                </div>
+                <!-- mobiletextarea_6 -->
+                <div data-role="fieldcontain" class="BaixarOrdemTelefone_mobiletextarea_6 ">
+                    <textarea name="mobiletextarea_6" id="BaixarOrdemTelefone_mobiletextarea_6" tabindex="3"
+                    dsid="mobiletextarea_6" data-theme="f" placeholder="Descrição da instalação..." class="BaixarOrdemTelefone_mobiletextarea_6">
+</textarea>
+                </div>
+                <!-- mobilebutton_27 --><!--
+                --><a data-role="button" name="mobilebutton_27" dsid="mobilebutton_27" class="BaixarOrdemTelefone_mobilebutton_27"
+                id="BaixarOrdemTelefone_mobilebutton_27" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="10">
+                Avançar
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="BaixarOrdemTelefone_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="BaixarOrdemTelefone_mobilefooter" data-theme="f">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="BaixarOrdemInternet" id="BaixarOrdemInternet"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Voltar"
+            data-theme="f" name="mobileheader" id="BaixarOrdemInternet_mobileheader" class="BaixarOrdemInternet_mobileheader">
+                <h1 dsid="mobileheader">
+                    Serviço Internet
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="BaixarOrdemInternet_mobilecontainer" name="mobilecontainer"
+            class="BaixarOrdemInternet_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="f">
+                <!-- mobilelabel_2 -->
+                <div name="mobilelabel_2" id="BaixarOrdemInternet_mobilelabel_2" dsid="mobilelabel_2"
+                data-role="appery_label" class="BaixarOrdemInternet_mobilelabel_2">
+                    Número da Ordem
+                </div>
+                <!-- mobiletextinput_3 -->
+                <div data-role="fieldcontain" class="BaixarOrdemInternet_mobiletextinput_3 ">
+                    <input type="number" name="mobiletextinput_3" dsid="mobiletextinput_3" value=""
+                    placeholder="Insira o número..." id="BaixarOrdemInternet_mobiletextinput_3" tabindex="1"
+                    multiple data-theme="f" class="BaixarOrdemInternet_mobiletextinput_3" />
+                </div>
+                <!-- mobilelabel_10 -->
+                <div name="mobilelabel_10" id="BaixarOrdemInternet_mobilelabel_10" dsid="mobilelabel_10"
+                data-role="appery_label" class="BaixarOrdemInternet_mobilelabel_10">
+                    Modem de Internet
+                </div>
+                <!-- mobiletextinput_11 -->
+                <div data-role="fieldcontain" class="BaixarOrdemInternet_mobiletextinput_11 ">
+                    <input type="text" name="mobiletextinput_11" dsid="mobiletextinput_11" value=""
+                    placeholder="Insira o código..." id="BaixarOrdemInternet_mobiletextinput_11" tabindex="6"
+                    multiple data-theme="f" class="BaixarOrdemInternet_mobiletextinput_11" />
+                </div>
+                <!-- mobiletextarea_6 -->
+                <div data-role="fieldcontain" class="BaixarOrdemInternet_mobiletextarea_6 ">
+                    <textarea name="mobiletextarea_6" id="BaixarOrdemInternet_mobiletextarea_6" tabindex="3"
+                    dsid="mobiletextarea_6" data-theme="f" placeholder="Descrição da instalação..." class="BaixarOrdemInternet_mobiletextarea_6">
+</textarea>
+                </div>
+                <!-- mobilebutton_27 --><!--
+                --><a data-role="button" name="mobilebutton_27" dsid="mobilebutton_27" class="BaixarOrdemInternet_mobilebutton_27"
+                id="BaixarOrdemInternet_mobilebutton_27" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="10">
+                Avançar
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="BaixarOrdemInternet_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="BaixarOrdemInternet_mobilefooter" data-theme="f">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="TipoServico" id="TipoServico"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Voltar"
+            data-theme="f" name="mobileheader" id="TipoServico_mobileheader" class="TipoServico_mobileheader">
+                <h1 dsid="mobileheader">
+                    Tipo Instalação
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="TipoServico_mobilecontainer" name="mobilecontainer"
+            class="TipoServico_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="f">
+                <!-- mobileimage_7 -->
+                <img class="TipoServico_mobileimage_7" src="../img/logovivo.png" id="TipoServico_mobileimage_7"
+                dsid="mobileimage_7" name="mobileimage_7" />
+                <!-- mobilegroupedbuttons_40 -->
+                <div data-role="controlgroup" name="mobilegroupedbuttons_40" id="TipoServico_mobilegroupedbuttons_40"
+                dsid="mobilegroupedbuttons_40" class="TipoServico_mobilegroupedbuttons_40">
+                    <!-- mobilebutton_41 --><!--
+                    --><a data-role="button" name="mobilebutton_41" dsid="mobilebutton_41" class="TipoServico_mobilebutton_41"
+                    id="TipoServico_mobilebutton_41" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                    x-apple-data-detectors="false" data-theme="f" tabindex="11" reRender='mobilegroupedbuttons_40'>
+                    TV
+                    </a><!--
+                    --><!-- mobilebutton_42 --><!--
+                    --><a data-role="button" name="mobilebutton_42" dsid="mobilebutton_42" class="TipoServico_mobilebutton_42"
+                    id="TipoServico_mobilebutton_42" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                    x-apple-data-detectors="false" data-theme="f" tabindex="11" reRender='mobilegroupedbuttons_40'>
+                    Internet
+                    </a><!--
+                    --><!-- mobilebutton_43 --><!--
+                    --><a data-role="button" name="mobilebutton_43" dsid="mobilebutton_43" class="TipoServico_mobilebutton_43"
+                    id="TipoServico_mobilebutton_43" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                    x-apple-data-detectors="false" data-theme="f" tabindex="11" reRender='mobilegroupedbuttons_40'>
+                    Telefone
+                    </a><!--
+                    --><!-- mobilebutton_44 --><!--
+                    --><a data-role="button" name="mobilebutton_44" dsid="mobilebutton_44" class="TipoServico_mobilebutton_44"
+                    id="TipoServico_mobilebutton_44" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                    x-apple-data-detectors="false" data-theme="f" tabindex="11" reRender='mobilegroupedbuttons_40'>
+                    TV + Internet
+                    </a>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="TipoServico_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="TipoServico_mobilefooter" data-theme="f">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="IntroducaoContra" id="IntroducaoContra"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Voltar"
+            data-theme="f" name="mobileheader" id="IntroducaoContra_mobileheader" class="IntroducaoContra_mobileheader">
+                <h1 dsid="mobileheader">
+                    APP - VivoFácil
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="IntroducaoContra_mobilecontainer" name="mobilecontainer"
+            class="IntroducaoContra_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="f">
+                <!-- mobilelabel_2 -->
+                <div name="mobilelabel_2" id="IntroducaoContra_mobilelabel_2" dsid="mobilelabel_2"
+                data-role="appery_label" class="IntroducaoContra_mobilelabel_2">
+                    Processo Atual - Contra
+                </div>
+                <!-- mobilelabel_3 -->
+                <div name="mobilelabel_3" id="IntroducaoContra_mobilelabel_3" dsid="mobilelabel_3"
+                data-role="appery_label" class="IntroducaoContra_mobilelabel_3">
+                    1-) Perda de tempo no encerramento de ordem de serviço.
+                </div>
+                <!-- mobilelabel_6 -->
+                <div name="mobilelabel_6" id="IntroducaoContra_mobilelabel_6" dsid="mobilelabel_6"
+                data-role="appery_label" class="IntroducaoContra_mobilelabel_6">
+                    2-) Menos atendimentos por dia produtivo
+                </div>
+                <!-- mobilelabel_10 -->
+                <div name="mobilelabel_10" id="IntroducaoContra_mobilelabel_10" dsid="mobilelabel_10"
+                data-role="appery_label" class="IntroducaoContra_mobilelabel_10">
+                    3-) Estresse devido a demora, sendo, tanto por parte do técnico quanto do cliente
+                </div>
+                <!-- mobilelabel_11 -->
+                <div name="mobilelabel_11" id="IntroducaoContra_mobilelabel_11" dsid="mobilelabel_11"
+                data-role="appery_label" class="IntroducaoContra_mobilelabel_11">
+                    4-) Falta de status em tempo real dos atendimentos, tanto OK, quanto NOK.
+                </div>
+                <!-- mobilelabel_8 -->
+                <div name="mobilelabel_8" id="IntroducaoContra_mobilelabel_8" dsid="mobilelabel_8"
+                data-role="appery_label" class="IntroducaoContra_mobilelabel_8">
+                    5-) Entre outros...
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="IntroducaoContra_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="IntroducaoContra_mobilefooter" data-theme="f">
+                <!-- mobilebutton_12 --><!--
+                --><a data-role="button" name="mobilebutton_12" dsid="mobilebutton_12" class="IntroducaoContra_mobilebutton_12"
+                style='margin-left:5px; ' id="IntroducaoContra_mobilebutton_12" data-corners="true"
+                data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false" data-inline='true'
+                data-mini='true' data-theme="f" tabindex="3">
+                Continuar...
+                </a>
+            </div>
+        </div>
+    </body>
+
+</html>
